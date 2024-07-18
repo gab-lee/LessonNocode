@@ -3,72 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heat2Energy - Powering a Cooler Future</title>
+    <title>Heat2Power - Sustainable Energy Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Heat2Energy</h1>
         <nav>
+            <div class="logo">Heat2Power</div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>Convert Heat to Power</h1>
+            <p>Reduce temperatures by 3°C and power air-conditioning for low-income families.</p>
+            <a href="#features" class="cta">Learn More</a>
+        </div>
     </header>
-    
-    <section id="hero">
-        <h2>Powering a Cooler Future</h2>
-        <p>Converting heat to electricity and reducing temperatures by 3 degrees.</p>
-        <p>Empowering low-income families with affordable air-conditioning.</p>
-        <a href="#contact" class="cta-button">Get Involved</a>
-    </section>
-    
     <section id="about">
         <h2>About Us</h2>
-        <p>Heat2Energy is dedicated to transforming the excessive heat in hot countries into a reliable source of electricity. Our innovative technology not only provides sustainable energy but also reduces ambient temperatures, making lives more comfortable.</p>
+        <p>Heat2Power is dedicated to providing sustainable energy solutions by converting excess heat into electrical energy, helping to cool down environments and power air-conditioning systems in low-income households.</p>
     </section>
-    
     <section id="features">
         <h2>Features</h2>
-        <ul>
-            <li>Innovative heat-to-electricity conversion</li>
-            <li>Temperature reduction by up to 3 degrees</li>
-            <li>Supports air-conditioning for low-income families</li>
-            <li>Sustainable and eco-friendly technology</li>
-        </ul>
+        <div class="feature">
+            <h3>Eco-Friendly</h3>
+            <p>Our technology helps in reducing carbon footprint by utilizing waste heat efficiently.</p>
+        </div>
+        <div class="feature">
+            <h3>Cost-Effective</h3>
+            <p>Provides affordable energy solutions to low-income families, reducing their energy bills.</p>
+        </div>
+        <div class="feature">
+            <h3>Temperature Control</h3>
+            <p>Effectively reduces ambient temperatures, making living conditions more comfortable.</p>
+        </div>
     </section>
-    
-    <section id="benefits">
-        <h2>Benefits</h2>
-        <ul>
-            <li>Improves living conditions in hot climates</li>
-            <li>Reduces electricity costs</li>
-            <li>Promotes environmental sustainability</li>
-            <li>Helps communities thrive</li>
-        </ul>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
     </section>
-    
     <footer>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Ready to make a difference? Reach out to us!</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-        <p>&copy; 2024 Heat2Energy. All rights reserved.</p>
+        <p>&copy; 2024 Heat2Power. All rights reserved.</p>
     </footer>
 </body>
 </html>
