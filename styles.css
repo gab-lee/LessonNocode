@@ -2,62 +2,61 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#hero {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
 }
 
-#hero h2 {
-    margin: 0;
-    font-size: 2.5rem;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
-#hero p {
-    margin: 1rem 0;
-    font-size: 1.2rem;
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.cta-button {
-    background: #333;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
     color: #fff;
-    padding: 0.5rem 1rem;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
 }
 
-.cta-button:hover {
-    background: #555;
+.hero {
+    padding: 2rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.cta {
+    background-color: #fff;
+    color: #ff7e5f;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section {
@@ -65,51 +64,64 @@ section {
     text-align: center;
 }
 
-section h2 {
+#about, #contact {
+    background: #f9f9f9;
+}
+
+h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-section p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+.feature {
+    margin: 1rem 0;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+.feature h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
 }
 
-footer form {
-    max-width: 600px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
     margin: 0 auto;
 }
 
-footer form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
+form label {
+    text-align: left;
+    font-weight: bold;
 }
 
-footer form input, 
-footer form textarea {
-    width: 100%;
+form input, form textarea {
     padding: 0.5rem;
-    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-footer form button {
-    background: #ff7e5f;
+form button {
+    background-color: #ff7e5f;
     color: #fff;
+    padding: 0.75rem;
     border: none;
-    padding: 0.7rem 1.5rem;
-    cursor: pointer;
     border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-footer form button:hover {
-    background: #feb47b;
+form button:hover {
+    background-color: #feb47b;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
 }
